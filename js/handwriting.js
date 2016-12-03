@@ -69,11 +69,11 @@ function calcLineWidth(t,s){
     var v = s/t;
     var resultWidth ;
     if(v <=0.1)
-        resultWidth = 20;
+        resultWidth = 15;
     else if(v>=10)
         resultWidth = 1;
     else
-        resultWidth = 20 - (v-0.1)/(10-0.1)*(20-1);;
+        resultWidth = 15 - (v-0.1)/(10-0.1)*(15-1);;
 
     if(lastLineWidth == -1){
         return resultWidth;
