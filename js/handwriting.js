@@ -69,11 +69,11 @@ function calcLineWidth(t,s){
     var v = s/t;
     var resultWidth ;
     if(v <=0.1)
-        resultWidth = 30;
+        resultWidth = 20;
     else if(v>=10)
         resultWidth = 1;
     else
-        resultWidth = 30 - (v-0.1)/(10-0.1)*(30-1);;
+        resultWidth = 20 - (v-0.1)/(10-0.1)*(20-1);;
 
     if(lastLineWidth == -1){
         return resultWidth;
@@ -160,7 +160,7 @@ function drawGrid(){
     context.moveTo(0,canvasHeight/2);
     context.lineTo(canvasWidth,canvasHeight/2);
 
-    context.setLineDash([4, 5]);//–Èœﬂ
+    context.setLineDash([4, 5]);//√ê√©√è√ü
     context.lineWidth = 1;
     context.stroke();
     context.restore();
